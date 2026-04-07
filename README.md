@@ -1,16 +1,152 @@
-# React + Vite
+# 🌦️ Weather Dashboard Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive weather dashboard built using **React.js** and **Open-Meteo APIs**.
+This project provides both **current weather insights** and **historical weather analytics** with rich visualizations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 📍 Page 1: Current Weather & Hourly Forecast
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🌡️ **Temperature** (Current, Min, Max)
+* 🌦️ **Atmospheric Conditions**
 
-## Expanding the ESLint configuration
+  * Precipitation
+  * Relative Humidity
+  * UV Index
+* 🌅 **Sun Cycle**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Sunrise & Sunset
+* 🌬️ **Wind & Air**
+
+  * Wind Speed
+  * Precipitation Probability
+* 🌫️ **Air Quality Metrics**
+
+  * PM10, PM2.5
+  * CO, NO2, SO2
+* 📈 **Hourly Temperature Chart**
+* 🔍 **Zoom Feature (Brush)** for better data analysis
+
+---
+
+### 📊 Page 2: Historical Weather
+
+* 📅 Custom **Date Range Selection**
+* 🌡️ Temperature Trends (Min / Max)
+* 🌅 Sunrise & Sunset Trends
+* 🌧️ Precipitation Analysis
+* 🌬️ Wind Speed & Direction
+* 🔍 Scrollable + Zoomable charts
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚛️ React.js
+* 📊 Recharts (for charts & data visualization)
+* 🌐 Open-Meteo API (Weather & Air Quality)
+* 🎨 CSS / Bootstrap (UI styling)
+
+---
+
+## ⚡ Performance Optimizations
+
+* ⏱️ Fast initial render with **loading state**
+* 🔄 Parallel API calls using `Promise.all()`
+* 📉 Optimized chart rendering
+* 📱 Responsive layout with smooth scrolling
+
+---
+
+## 🌍 APIs Used
+
+### Weather Data:
+
+https://api.open-meteo.com/v1/forecast
+
+### Historical Data:
+
+https://archive-api.open-meteo.com/v1/archive
+
+### Air Quality Data:
+
+https://air-quality-api.open-meteo.com/v1/air-quality
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/MrAjayGangwar2001/weather-dashboard.git
+
+# Navigate to project folder
+cd weather-dashboard
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── components/
+ │    ├── charts/
+ │
+ ├── pages/
+ │    ├── CurrentWeather.jsx
+ │    ├── HistoricalWeather.jsx
+ │
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## 🎯 Key Highlights
+
+* ✅ Clean and modular code structure
+* ✅ Fully dynamic API-based data
+* ✅ Interactive charts with zoom & scroll
+* ✅ Real-world production-like UI
+* ✅ Handles edge cases (loading, errors, validation)
+
+---
+
+## 📌 Future Enhancements
+
+* 🌍 City search functionality
+* 🌙 Dark mode support
+* 📥 Export data (CSV)
+* 📊 More advanced analytics
+
+---
+
+## 👨‍💻 Author
+
+**Ajay Gangwar**
+📧 [gangwar030@gmail.com](mailto:gangwar030@gmail.com)
+📱 9720576210
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates strong understanding of:
+
+* API integration
+* Data visualization
+* React component architecture
+* Performance optimization
+
+---
+
+💡 *Built as part of a technical assignment to showcase frontend development skills.*
